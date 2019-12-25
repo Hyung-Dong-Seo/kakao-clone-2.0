@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    
-    <!-- get icons from fontawesom.com --> 
-    <script src="https://kit.fontawesome.com/61bb3eb575.js"
-      crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- get icons from fontawesom.com -->
+    <script src="https://kit.fontawesome.com/61bb3eb575.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- title  -->
     <title>Chats | Kakao Clone</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 카카오 톡에서 가장 윗 부분 배터리, 와이파이 시간등을 표시해주는 
-        곳 = status-bar -->
+        곳 = status-bar  css에서 인식할때 class 명이 중요하다.
+    class 명은 __표시로 구분되는데, 형식은 부모 클레스__자식 클래스 이다.
+-->
     <div class="status-bar">
-        <div class="status-bar__column">
-            <spacn class="tatus-bar__clock">13:54</spacn>
-        </div>
-        <div class="status-bar__column">
-            <i class="fas fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-wifi"></i>
-            <span class="status-bar__bettery-level">100% </span>
-            <i class="fas fa-battery-full"></i>
-        </div>
+      <div class="status-bar__column">
+        <spacn class="tatus-bar__clock">13:54</spacn>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__bettery-level">100% </span>
+        <i class="fas fa-battery-full"></i>
+      </div>
     </div>
 
     <!-- header -> 카카오 톡에서 윗부분 검색, 채팅, 설정 창 아이콘 위치 -->
-    <header class ="header">
-        <div class="header__header-column">
-            <h1 class="header__title">Chats</h1>
-        </div>
-        <div class="header__header-column">
-            <span class="headear__icon">
-                <i class="fas fa-search"></i>
-            </span>
-            <span class="headear__icon">
-                <i class="fas fa-comment"></i>
-            </span>
-            <span class="headear__icon">
-                <i class="fas fa-cog"></i>
-            </span>
-        </div>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">Chats</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="headear__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="headear__icon">
+          <i class="fas fa-comment"></i>
+        </span>
+        <span class="headear__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
     </header>
     <!-- 채팅창이 나타날 거임 -->
     <main class="chats">
-        <ul class="chats__list">
-            <li class="chats__chat chat">
-                <a href="chat.html">
-                    <div class="chat__column">
-                        <img class="chat__avatar g-avatar" src="/images/image.jpg" />
-                        <div class="chat__content">
-                            <span class="chat__username">
-                                Lynn
-                            </span>
-                            <span class="chat__preview">
-                                Going home
-                            </span>
-                        </div>
-                    </div>
-                    <div class="chat__column">
-                        <span class="chat__timestamp">Yesterday</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
-
+      <ul class="chats__list">
+        <li class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chat__column">
+              <img class="chat__avatar g-avatar" src="/images/image.jpg" />
+              <div class="chat__content">
+                <span class="chat__username">
+                  Lynn
+                </span>
+                <span class="chat__preview">
+                  Going home
+                </span>
+              </div>
+            </div>
+            <div class="chat__column">
+              <span class="chat__timestamp">Yesterday</span>
+            </div>
+          </a>
+        </li>
+      </ul>
     </main>
     <!-- nav 네비게이터 카카오톡 가장 아랫 부분 정의 -->
     <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__list-item">
-                <a href="../kakao-clone-2.0/friends.html" class="nav__list-link">
-                    <i class="far fa-user"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="../kakao-clone-2.0/index.html" class="nav__list-link">
-                    <i class="fas fa-comment"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="../kakao-clone-2.0/find.html" class="nav__list-link">
-                    <i class="fas fa-search"></i>
-                </a>
-            </li>
-            <li class="nav__list-item">
-                <a href="../kakao-clone-2.0/more.html" class="nav__list-link">
-                    <i class="fas fa-ellipsis-h"></i>
-                </a>
-            </li>
-        </ul>
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="../kakao-clone-2.0/friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="../kakao-clone-2.0/index.html" class="nav__list-link">
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="../kakao-clone-2.0/find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="../kakao-clone-2.0/more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
-</body>
+  </body>
 </html>
